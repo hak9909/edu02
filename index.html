@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경일중학교 정보 선생님 - 메타버스 & 미래 교육</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap');
+        
+        body {
+            font-family: 'Pretendard', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-bg {
+            background: radial-gradient(circle at top right, #e0e7ff 0%, #ffffff 100%);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .metaverse-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-3">
+                    <!-- Logo Image Positioned Before Text -->
+                    <div class="flex items-center">
+                        <img src="./images/logo.png" alt="Logo" class="h-10 w-auto mr-2" onerror="this.src='https://via.placeholder.com/40?text=Logo'">
+                        <span class="text-2xl font-bold gradient-text">경일중학교 정보 동아리</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-indigo-600 transition">소개</a>
+                    <a href="#metaverse" class="hover:text-indigo-600 transition">메타버스 동아리</a>
+                    <a href="#class" class="hover:text-indigo-600 transition">수업안내</a>
+                    <a href="#contact" class="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">문의하기</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 space-y-6">
+                <div class="inline-block px-4 py-1 bg-indigo-100 text-indigo-700 rounded-full font-semibold text-sm">
+                    미래를 코딩하는 경일중학교 정보 교사
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                    현실과 가상을 잇는<br>
+                    <span class="gradient-text">메타버스 교육 전문가</span>
+                </h1>
+                <p class="text-lg text-gray-600 max-w-lg">
+                    디지털 리터러시를 넘어, 메타버스 공간에서 새로운 세상을 설계합니다. 
+                    ZEP과 마인크래프트로 즐겁게 배우는 정보 수업에 오신 것을 환영합니다!
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#metaverse" class="px-6 py-4 bg-indigo-600 text-white rounded-xl shadow-lg hover:bg-indigo-700 transition">동아리 활동 보기</a>
+                    <a href="#class" class="px-6 py-4 border border-gray-300 rounded-xl hover:bg-white transition">수업 자료실</a>
+                    <a href="#contact" class="px-6 py-4 bg-purple-100 text-purple-700 rounded-xl hover:bg-purple-200 transition font-semibold">질문하기</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 relative flex justify-center">
+                <div class="w-72 h-72 md:w-96 md:h-96 bg-indigo-200 rounded-full absolute blur-3xl opacity-50"></div>
+                <!-- Profile Placeholder with Icon -->
+                <div class="relative z-10 bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 flex flex-col items-center justify-center w-full max-w-sm aspect-square">
+                    <div class="w-32 h-32 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-tie text-5xl text-indigo-600"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">정보 선생님</h2>
+                    <p class="text-indigo-600 font-medium">@경일중학교</p>
+                    <div class="mt-6 flex space-x-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-500">#ZEP</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-500">#Minecraft</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-500">#Metaverse</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 card-hover text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-school text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">경일중학교</h3>
+                    <p class="text-gray-600">학생들과 함께 성장하는 경일중학교 정보 교과 및 동아리 지도교사입니다.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 card-hover text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-vr-cardboard text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">메타버스 전문가</h3>
+                    <p class="text-gray-600">ZEP, 마인크래프트 에듀케이션을 활용한 창의적인 실습 교육을 지향합니다.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 card-hover text-center">
+                    <div class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-laptop-code text-2xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">정보 교육</h3>
+                    <p class="text-gray-600">코딩, AI, 디지털 소양 교육을 통해 미래 사회의 인재를 양성합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metaverse Club Section -->
+    <section id="metaverse" class="py-20 bg-indigo-900 text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">메타버스 동아리</h2>
+                <p class="text-indigo-200">상상이 현실이 되는 공간, 메타버스에서 꿈을 키웁니다.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition">
+                        <div class="mt-1 bg-indigo-500 p-3 rounded-xl shadow-lg">
+                            <i class="fas fa-cube text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2 text-indigo-300">ZEP 맵 메이킹</h4>
+                            <p class="text-indigo-100/80">경일중학교의 가상 캠퍼스를 구축하고, 학교 행사를 기획하여 학생들이 직접 운영해 봅니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition">
+                        <div class="mt-1 bg-green-500 p-3 rounded-xl shadow-lg">
+                            <i class="fas fa-gamepad text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2 text-green-300">마인크래프트 에듀케이션</h4>
+                            <p class="text-indigo-100/80">코딩 에이전트를 활용한 건축 활동과 논리적 사고력을 기르는 문제 해결 프로젝트를 진행합니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition">
+                        <div class="mt-1 bg-yellow-500 p-3 rounded-xl shadow-lg">
+                            <i class="fas fa-users text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2 text-yellow-300">협업 프로젝트</h4>
+                            <p class="text-indigo-100/80">동료들과 함께 하나의 세상을 만들며 협동심과 창의적 리더십을 배웁니다.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative flex justify-center items-center">
+                    <div class="w-full aspect-square max-w-md bg-indigo-800/50 rounded-3xl border border-indigo-400/30 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-10">
+                            <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 30px 30px;"></div>
+                        </div>
+                        <div class="text-center z-10 p-8">
+                            <div class="mb-6 inline-block p-5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/50">
+                                <i class="fas fa-rocket text-5xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2">Metaverse World</h3>
+                            <p class="text-indigo-300">ZEP & Minecraft</p>
+                            <div class="mt-8 flex justify-center -space-x-4">
+                                <div class="w-12 h-12 rounded-full border-2 border-indigo-900 bg-blue-500 flex items-center justify-center">1</div>
+                                <div class="w-12 h-12 rounded-full border-2 border-indigo-900 bg-purple-500 flex items-center justify-center">2</div>
+                                <div class="w-12 h-12 rounded-full border-2 border-indigo-900 bg-indigo-500 flex items-center justify-center">3</div>
+                                <div class="w-12 h-12 rounded-full border-2 border-indigo-900 bg-gray-700 flex items-center justify-center">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Section -->
+    <section id="class" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4 text-gray-900">선생님의 수업 철학</h2>
+                    <p class="text-gray-600">이론보다 실천, 기술보다 가치를 가르칩니다.</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <button class="px-6 py-2 bg-indigo-50 text-indigo-600 font-bold rounded-lg border border-indigo-100">
+                        전체 강의계획서 보기
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="border border-gray-100 p-6 rounded-2xl hover:shadow-lg transition">
+                    <div class="text-indigo-600 mb-4 text-3xl font-bold">01</div>
+                    <h4 class="text-xl font-bold mb-3">ZEP 기초 실습</h4>
+                    <p class="text-gray-600 text-sm mb-4">오브젝트 활용과 맵 에디터 기본 기능을 익혀 나만의 방을 만들어 봅니다.</p>
+                    <span class="text-xs font-semibold px-3 py-1 bg-gray-100 rounded-full text-gray-500">중1-2 정보</span>
+                </div>
+                <!-- Card 2 -->
+                <div class="border border-gray-100 p-6 rounded-2xl hover:shadow-lg transition">
+                    <div class="text-indigo-600 mb-4 text-3xl font-bold">02</div>
+                    <h4 class="text-xl font-bold mb-3">마인크래프트 코딩</h4>
+                    <p class="text-gray-600 text-sm mb-4">블록 코딩을 활용하여 복잡한 건축물을 순식간에 짓는 자동화 프로그램을 작성합니다.</p>
+                    <span class="text-xs font-semibold px-3 py-1 bg-green-100 rounded-full text-green-600">심화 실습</span>
+                </div>
+                <!-- Card 3 -->
+                <div class="border border-gray-100 p-6 rounded-2xl hover:shadow-lg transition">
+                    <div class="text-indigo-600 mb-4 text-3xl font-bold">03</div>
+                    <h4 class="text-xl font-bold mb-3">미래기술과 윤리</h4>
+                    <p class="text-gray-600 text-sm mb-4">메타버스 세계에서 지켜야 할 에티켓과 디지털 저작권에 대해 토론합니다.</p>
+                    <span class="text-xs font-semibold px-3 py-1 bg-pink-100 rounded-full text-pink-600">디지털 윤리</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">궁금한 점이 있으신가요?</h2>
+            <p class="text-gray-400 mb-8">수업 자료 공유 및 교육 협력 문의는 언제든 환영합니다.</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8 items-center mb-12">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-envelope text-indigo-400"></i>
+                    <span>hak9909@gyeongil.ms.kr</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-map-marker-alt text-indigo-400"></i>
+                    <span>경일중학교 정보 교실</span>
+                </div>
+            </div>
+            <hr class="border-gray-800 mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>© 2024 Kyung-il Middle School Informatics. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">블로그</a>
+                    <a href="#" class="hover:text-white transition">유튜브</a>
+                    <a href="#" class="hover:text-white transition">인스타그램</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
